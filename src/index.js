@@ -46,8 +46,7 @@ function searchEventHandler(e) {
   console.log(e, searchInput.value);
   const filteredAppState = appState.filter(
     (user) =>
-      user.name.first.toLowerCase().includes(searchInput.value.toLowerCase()) ||
-      user.name.last.toLowerCase().includes(searchInput.value.toLowerCase()) ||
+      user.name.toLowerCase().includes(searchInput.value.toLowerCase()) ||
       user.gender.toLowerCase().includes(searchInput.value.toLowerCase()) ||
       user.email.toLowerCase().includes(searchInput.value.toLowerCase())
   );
